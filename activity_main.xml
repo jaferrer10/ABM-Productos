@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ET_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D8CA94"
+        android:ems="10"
+        android:hint="Codigo ID"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D8CA94"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_codigo" />
+
+    <EditText
+        android:id="@+id/ET_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D8CA94"
+        android:ems="10"
+        android:hint="Valor"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_descripcion" />
+
+    <Button
+        android:id="@+id/btn_ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:background="#76E87B"
+        android:onClick="Registro_Producto"
+        android:text="Nuevo Producto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:background="#52BAEA"
+        android:onClick="Busca_Producto"
+        android:text="Buscar Producto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_modificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="153dp"
+        android:background="#F4E240"
+        android:onClick="Modifica_Producto"
+        android:text="Modificar Producto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="153dp"
+        android:background="#EF4545"
+        android:onClick="Elimina_Producto"
+        android:text="Eliminar Producto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
